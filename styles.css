@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+body{
+    background: hsl(202, 86%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: inherit;
+}
+
+.container{
+    background-color: #fff;
+    display: flex;
+    max-width: 45rem;
+    border-radius: .8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.formulario{
+    width: 50%;
+    padding: 1.5rem;
+}
+.conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .7rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.titulo{
+    font-size: .8rem;
+    font-weight: bold;
+}
+.limpar{
+    text-decoration: underline;
+    font-size: .79rem;
+    color: #000;
+}
+
+/*Formulario*/
+
+.input-primeiro{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label{
+    font-size: .75rem;
+    font-weight: bold;
+    color: #a09c9c;
+}
+.input-box-1{
+    align-items: center;
+    display: flex;
+    flex: 1 1 2rem;
+    margin-top: .3rem;
+    border-radius: .3rem;
+    border: 1px solid #a09c9c;
+    gap: 1rem;
+}
+.simbolo{
+    background-color: hsl(202, 86%, 94%);
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 0 .5rem;
+    align-items: center;
+    height: 100%;
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+.simbolo h1{
+    font-size: .8rem;
+    font-weight: bolder;
+}
+.input-box-1 input{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.segundo-input{
+    display: flex;
+    gap: 1rem;
+}
+
+.segundo-input .input-box-1{
+    flex-direction: row-reverse;
+}
+.segundo-input .input-box-1 .simbolo{
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+.segundo-input .input-box-1 input{
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    margin-left: .7rem;
+}
+.tipo{
+    display: flex;
+    flex-direction: column;
+}
+.tipo h2{
+    font-size: .75rem;
+    font-weight: bold;
+    color: #a09c9c;
+    margin-bottom: .5rem;
+}
+.radio-button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: .5rem .5rem;
+    gap: 1rem;
+    height: 2rem;
+    border: 1px solid #a09c9c;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+.radio-button label{
+    color: #000;
+}
+.botao{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1.5rem;
+    border: none;
+    background-color: hsla(61, 70%, 52%, 0.719);
+    color: #000;
+    font-weight: bold;
+    gap: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+/**********************************************************************/
+
+/*esquerda*/
+.esquerda{
+    background-color: hsl(202, 55%, 16%);
+    width: 50%;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: .8rem;
+    border-top-right-radius: .8rem;
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.vazio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.imagem{
+    width: 8rem;
+}
+.imagem img{
+    width: 100%;
+}
+.vazio h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.vazio p{
+    font-size: .66rem;
+    color: #a09c9c;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/*Resiltado*/
+.resultado{
+    display: none;
+    flex-direction: column;
+}
+.titulo-resultado{
+    font-size: 1rem;
+    margin-bottom: .60rem;
+}
+
+.resultado p{
+    font-size: .70rem;
+    margin-bottom: 1rem;
+    color: #607f93;
+}
+.modal-resultado{
+    background-color: #0e2431;
+    padding: 1rem;
+    border-radius: .5rem;
+    border-top: 2px solid #dadf3d;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.resultado-mensal{
+    border-bottom: 1px solid #324855;
+}
+
+.modal-resultado h2{
+    font-size: .68rem;
+    margin-top: 1rem;
+    color: #607f93;
+    margin-bottom: .5rem;
+}
+.resultado-mensal h2{
+    font-size: .68rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+.valor-mensal{
+    color: #dadf3d;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.valor-total{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+/************ Estilo para javaScript ********************/
+.muda-borda{
+    border: 1px solid #d73328;
+}
+.muda-simbolo{
+    background-color: #d73328;
+    color: #fff;
+}
+
+
+/****************Media queres*****************/
+
+@media (max-width: 768px) {
+    body{
+        height: 100%;
+    }
+    .container{
+        flex-direction: column;
+        width: 80%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .esquerda{
+        min-width: 100%;
+        border-bottom-left-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        border-top-right-radius: 0;
+    }
+    
+    .formulario{
+        min-width: 100%;
+    }
+    
+}
+
+@media (max-width: 430px) {
+    body{
+        background-color:  hsl(202, 55%, 16%);
+    }
+    .container{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .esquerda{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: none;
+    }
+    .resultado{
+        margin-bottom: 5rem;
+    }
+    .segundo-input{
+        flex-direction: column;
+    }
+    .segundo-input .input-box-1{
+        width: 100%;
+    }
+}

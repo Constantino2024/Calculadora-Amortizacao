@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Amortização</title>
+</head>
+<body>
+    
+    <section class="container">
+        <div class="formulario">
+            <div class="conteudo">
+
+                <div class="header-form">
+                    <h2 class="titulo">Calculadora de Amortização</h2>
+                    <a href="#" id="limpar" class="limpar">Limpar</a>
+                </div>
+
+                <form action="#">
+                    <div class="input-primeiro">
+                        <label for="primeiro">Valor da Hipoteca</label>
+                        <div class="input-box-1" id="input-box-1">
+                            <div class="simbolo" id="simbolo1">
+                                <h1>AOA</h1>
+                            </div>
+                            <input id="primeiro" type="text" required>
+                        </div>
+                    </div><!--Fim do Primeiro Input-->
+
+                    <div class="segundo-input">
+                        <div class="input-primeiro">
+                            <label for="segundo">Prazo da hipoteca</label>
+                            <div class="input-box-1" id="input-box-2">
+                                <div class="simbolo" id="simbolo2">
+                                    <h1>Anos</h1>
+                                </div>
+                                <input id="segundo" type="text" required>
+                            </div>
+                        </div>
+
+                        <div class="input-primeiro">
+                            <label for="terceiro">taxa de juro</label>
+                            <div class="input-box-1" id="input-box-3">
+                                <div class="simbolo" id="simbolo3">
+                                    <h1>%</h1>
+                                </div>
+                                <input id="terceiro" type="text" required>
+                            </div>
+                        </div>
+                    </div><!--Fim do Segundo input de dois-->
+
+                    <div class="tipo">
+                        <h2>tipo de hipoteca</h2>
+                        <div class="radio-button">
+                            <input id="quarto" type="radio" value="reembolsos" name="tipo-hipoteca">
+                            <label for="quarto" class="labell">Reembolso</label>
+                        </div>
+
+                        <div class="radio-button">
+                            <input id="quinto" type="radio" value="interesse" name="tipo-hipoteca">
+                            <label for="quinto" class="labell">Apenas interesse</label>
+                        </div>
+                    </div>
+
+                    <button class="botao" id="botao">
+                        <img src="imagens/icon-calculator.svg" alt="foto de calculadora">
+                        Calcular Reembolso
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="esquerda">
+
+            <div class="resultado" id="resultdo">
+                <h2 class="titulo-resultado">Sua resolução</h2>
+                <p>Seus resultados são mostrados abaixo com base nas informações 
+                    que você forneceu. Para ajustar os resultados, edite 
+                    o formulário e clique novamente em “calcular reembolsos”</p>
+                
+                <div class="modal-resultado">
+                    <div class="resultado-mensal">
+                        <h2>Seus pagamentos mensais</h2>
+                        <h1 class="valor-mensal" id="valor-mensal">0</h1>
+                    </div>
+                    <h2>Total que você pagará ao longo do prazo</h2>
+                    <h3 class="valor-total" id="valor-total">0</h3>
+                </div>
+            </div>
+
+            <div class="vazio" id="vazio">
+                <div class="imagem">
+                    <img src="imagens/illustration-empty.svg" alt="imagem de calculadora">
+                </div>
+                <h2>Resultado mostrado aqui</h2>
+                <p>Preencha o formulário e clique em "calcular pagamentos" para ver quais seriam seus pagamentos mensais</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
